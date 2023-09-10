@@ -1,5 +1,4 @@
 # gd205
-# GD205-project
 unity project for gd205
 
 This is the first attempt at some basic movement (up,down,left,right)
