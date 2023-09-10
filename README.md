@@ -24,5 +24,14 @@ in the next one I hope to add:
 
 09/09/2023
 --- 
+I was able to add a scene loader for when the player progresses to the next level!!! 
+a lowercase P was the reason it hadnt worked but now it does.... 
 
-please let me check if this shit works im CRYING 
+next on the list:
+-Enemies
+-a timer?
+
+*i dont really have a game idea for this one*
+
+09/10/2023
+---

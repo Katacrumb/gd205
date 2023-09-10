@@ -16,22 +16,22 @@ public class BasicMovement : MonoBehaviour
     {
 
         if (Input.GetKeyDown(KeyCode.W)){
-            print("W key pressed:");
+            
             transform.position += Vector3.forward;
             transform.forward = Vector3.forward;
         }
         if (Input.GetKeyDown(KeyCode.S)){
-            print("S key pressed:");
+           
             transform.position += Vector3.back;
             transform.forward = Vector3.back;
         }
         if(Input.GetKeyDown(KeyCode.A)){
-            print("A key pressed:");
+            
             transform.position += Vector3.left;
             transform.forward = Vector3.left;
         }
         if (Input.GetKeyDown(KeyCode.D)){
-            print("D key pressed:");
+            
             transform.position += Vector3.right;
             transform.forward = Vector3.right;
         }
