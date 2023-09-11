@@ -13,3 +13,5 @@ public class Finish : MonoBehaviour
         }
     }
 }
+
+// when choosing an index add + 1 to the end of a scene to go forward in it. 
