@@ -32,3 +32,12 @@ next on the list:
 *i dont really have a game idea for this one*
 
 ---
+09/13/2023-
+i was able to code in a new scene and add more falling blocks next i will work on:
+
+- Enemies
+-A final level
+
+*still figuring out if i should makea point system but i dont think that will be the case*
+
+---
