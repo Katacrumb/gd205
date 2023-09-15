@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class BasicMovement : MonoBehaviour
 {
-    
+    public GameObject hazard;
+    public GameObject[] hazards;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +40,19 @@ public class BasicMovement : MonoBehaviour
         }
         // the transform.forward = vector3.x; is meant to be used so that when a key is pressed in a direction
         //it faces that way.
+        /*
+         if (transform.position == hazard.transform.position){
+            Debug.Log("This is a hazard): it hurt!");
+            Destroy(gameObject);
     
+        }
+        */
+
+        for (int i = 0; i < hazards.Length; i++){
+            if (transform.position == hazards.transform.position){
+            Debug.Log("This is a hazard): it hurt!");
+            Destroy(gameObject);
+        }
 
     }
 }
