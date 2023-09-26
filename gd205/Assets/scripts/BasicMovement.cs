@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class BasicMovement : MonoBehaviour
 {
-    public GameObject hazard;
+    
     public GameObject[] hazards;
+    Vector3 startPos;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        startPos = transform.position;
     }
 
     // Update is called once per frame
@@ -38,21 +39,9 @@ public class BasicMovement : MonoBehaviour
             transform.position += Vector3.right;
             transform.forward = Vector3.right;
         }
-        // the transform.forward = vector3.x; is meant to be used so that when a key is pressed in a direction
-        //it faces that way.
-        /*
-         if (transform.position == hazard.transform.position){
-            Debug.Log("This is a hazard): it hurt!");
-            Destroy(gameObject);
-    
-        }
-        */
+        
 
-        for (int i = 0; i < hazards.Length; i++){
-            if (transform.position == hazards.transform.position){
-            Debug.Log("This is a hazard): it hurt!");
-            Destroy(gameObject);
-        }
+        
 
     }
 }

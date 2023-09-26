@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Finish : MonoBehaviour
 {
+    public AudioSource finish;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "player")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1 );
+            finish.Play();
         }
     }
 }
