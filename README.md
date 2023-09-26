@@ -41,3 +41,11 @@ i was able to code in a new scene and add more falling blocks next i will work o
 *still figuring out if i should makea point system but i dont think that will be the case*
 
 ---
+09/25/2023
+attempted at adding sound
+did create a menu screen, and added a few buttons
+what to work on :
+
+- final stage
+-fix enemy coding
+-sleep
