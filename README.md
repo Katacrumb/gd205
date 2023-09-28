@@ -49,3 +49,14 @@ what to work on :
 - final stage
 -fix enemy coding
 -sleep
+---
+09/27/2023
+added sound ! the audio is a little iffy but its whatevs aslong as it sounds ok. 
+I fixed the enemy, im gonna try and make them move tomorrow, i just needed to use the reload scene code, i had to seperate it from the floor code due to me wanting to add sound. Prefabed it so i can use it anywhere! 
+things to do 
+- Sleep
+- add more sounds 
+- make a end level with moving enemies 
+- maybe make the lighting better. 
+
+---
