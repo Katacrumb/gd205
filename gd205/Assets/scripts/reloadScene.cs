@@ -12,8 +12,10 @@ public class reloadScene : MonoBehaviour
     {
         if(collider.CompareTag("Player"))
         {
+            ScoreScript.scoreValue += 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             restart.Play();
+            
             
         }
             
