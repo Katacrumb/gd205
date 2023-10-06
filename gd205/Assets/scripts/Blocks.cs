@@ -7,6 +7,7 @@ public class Blocks : MonoBehaviour
     bool isFalling = false;
     float downSpeed = 0;
 
+
     void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.name == "player"){
@@ -15,6 +16,8 @@ public class Blocks : MonoBehaviour
         
     }
     }
+
+    
     void Update()
     {
         if (isFalling)
