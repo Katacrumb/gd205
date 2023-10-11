@@ -60,3 +60,11 @@ things to do
 - maybe make the lighting better. 
 
 ---
+10/11/2023
+working on making enemies that chase, and collectables throught the level
+dunno how ill do it but an attempt will be made! 
+
+to-do:
+- make enemies
+- add collectables 
+- change colors for the game.
