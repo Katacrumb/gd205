@@ -15,6 +15,6 @@ public class CameraCon : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, camTarget.rotation, rLerp);
     }
 
-
+    /* Lerps is interpolation between two points. */
 
 }
