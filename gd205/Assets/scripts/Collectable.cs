@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* this code allows for the game object to be moved towards the ufo */
+
 public class Collectable : MonoBehaviour
 {
     
