@@ -4,13 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class reloadScene : MonoBehaviour
-{       
-
-    
-    void OnTriggerEnter(Collider collider)
+public class reloadbear : MonoBehaviour
+{
+    // Start is called before the first frame update
+   void OnTriggerEnter(Collider collider)
     {
-        if(collider.CompareTag("Enemy "))
+        if(collider.CompareTag("Enemy"))
         {
             ScoreScript.scoreValue += 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -20,5 +19,4 @@ public class reloadScene : MonoBehaviour
         }
             
     }
- }
-
+}

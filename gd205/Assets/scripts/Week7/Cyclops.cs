@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Cyclops : MonoBehaviour
 {
-
-    public float boomBoom = 5f;
-    public float boomBlast = 6f;
+    public float boomForce = 750f;
+    public float boomRad = 60f;
     public GameObject prefab;
+    public GameObject bear;
 
 
     void FixedUpdate()
@@ -15,13 +15,15 @@ public class Cyclops : MonoBehaviour
         Ray laser = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit = new RaycastHit();
 
-        if(Physics.Raycast(laser, out hit)){
-            
-            if(Input.GetMouseButton(0) && g){
-                Destroy(gameObject);
-
+        if (Physics.Raycast(laser, out hit)){
+            Debug.Log("you hit " + hit.transform.name);
+            if (Input.GetMouseButton(0) && hit.rigidbody){
+                hit.rigidbody.AddExplosionForce(boomForce, hit.point, boomRad);
             }
-            
+
+            if (Input.GetMouseButtonDown(1)){
+                Instantiate(prefab, hit.point, Quaternion.identity);
+            }
         }
     }
 }
