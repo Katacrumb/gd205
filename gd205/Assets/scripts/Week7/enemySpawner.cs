@@ -11,6 +11,8 @@ public class enemySpawner : MonoBehaviour
     [SerializeField]
     private float enemyInterval = 3.5f;
 
+    
+
 
     void Start()
     {   
@@ -24,7 +26,7 @@ public class enemySpawner : MonoBehaviour
    {
     yield return new WaitForSeconds(interval);
 
-    GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-5f,5), Random.Range(-6f,6f), 0 ), Quaternion.identity);
+    GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-5f,5), Random.Range(1,3f), 0 ), Quaternion.identity);
     
     StartCoroutine(spawnEnemy(interval, enemy));
 
