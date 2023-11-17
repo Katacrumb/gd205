@@ -28,10 +28,10 @@ public class UiFunctions : MonoBehaviour
     }
 
 
-    public void ButtonChange(){
+   /* public void ButtonChange(){
     
         tmp = GetComponent<TextMeshProUGUI>();
         tmp.SetText("buttsquared");
 
-    }
+    }*/
 }
